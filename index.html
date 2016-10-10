@@ -1,0 +1,75 @@
+<html>
+<head>
+<title>padding test</title>
+<link rel="stylesheet" type="text/css" href="padtest.css">
+<style>
+</style>
+     <script>
+        function ac()
+        {
+            document.getElementById("disp").value="";
+        }  
+        function ce()
+        {
+            
+            var str=document.getElementById("disp").value;
+            str=str.substr(0,str.length-1);
+            document.getElementById("disp").value=str;
+        }
+        function addtext(val)
+        {
+            document.getElementById("disp").value+=val;     
+        }
+        function e()
+        {
+            try{if(document.getElementById("disp").value=="")
+                {
+                    document.getElementById("disp").value="no number";
+                    exit;
+                }
+            var result=eval(document.getElementById("disp").value);
+            document.getElementById("disp").value=result;
+        }
+            catch(e)
+                {
+                    document.activeElement.nodeValue="error";
+                }
+        }
+    </script>
+    
+</head>
+<body>
+	<p class="intro">DIGITAL CALCULATOR</p>			
+	<hr>
+    <div class="container">
+		<div class="display">
+			<input type="text" readonly value="" size="20px"  id="disp">
+		</div>
+		<div class="button1" >
+		 <input class="butt" type="button" value="AC"  onclick="ac()">
+        <input  class="butt" type="button" value="CE"   onclick="ce()">
+    </div>    
+        <hr>
+    <div class="button2">
+        <input style="margin-left:5%" class="but" type="button" value="%" onclick="addtext('%')">
+        <input class="but"   type="button" id="div"  value="/" onclick="addtext('/')">
+        <input class="but"   type="button" id="one" value="1" onclick="addtext(one.value)">
+        <input class="but"   type="button" id="2" style="margin-left:5%" value="2" onclick="addtext('2')">
+        <input class="but"   type="button" id="3" value="3" onclick="addtext('3')">
+        <input class="but"  type="button" id="4" value="4" onclick="addtext('4')">
+        <input class="but"  type="button" id="5" value="5" style="margin-left:5%" onclick="addtext('5')">
+        <input class="but"  type="button" id="6" value="6" onclick="addtext('6')">
+        <input  class="but" type="button" id="7" value="7" onclick="addtext('7')">
+        <input  class="but"  type="button" style="margin-left:5%"
+    class="button black" value="8" onclick='addtext("8")'>
+        <input  class="but"   type="button" id="9" value="9" onclick="addtext('9')">
+        <input class="but"  type="button" id="0" value="0" onclick="addtext('0')">
+        <input  class="but"  type="button" id="+" style="margin-left:5%" value="+" onclick="addtext('+')">
+        <input class="but"  type="button" value="-" onclick="addtext('-')">
+        <input class="but"  type="button" id="*" value="*" onclick="addtext('*')">
+        <input  class="but" type="button" id="." value="." style="margin-left:5%" onclick="addtext('.')">
+        <input  class="bute"   type="button" value="=" onclick="e()">
+		</div>
+    </div>
+</body>
+</html>

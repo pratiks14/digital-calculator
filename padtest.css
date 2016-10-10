@@ -1,0 +1,81 @@
+.intro
+{
+    text-align: center;
+    display:inline-block;
+    margin:0px 43%;
+    background-color: aquamarine;
+    padding: 1%;
+    font-family: sans-serif;
+    font-weight: bold;
+  
+}
+body
+{
+      background-image: url(padtest2.jpg);
+}
+.display
+{
+    text-align: center;
+    margin:;1%;
+    padding:inherit;
+    border:2px dashed #fff;
+}
+
+
+.container
+{
+    margin:1% 30%;
+    border:2px solid #fff;
+    padding: 1%;
+    border-radius:5%;
+    background-image:url(padtest.jpg);
+}
+.butt
+{
+    width:30%;
+    height: 7%;
+    margin: 1% 5%;
+    border-radius:15%;
+    font-size: 20px;
+    background:-webkit-linear-gradient(top,#aadddd 0%,#77aaaa 100%);
+}
+.butt:hover
+{
+     background:-webkit-linear-gradient(bottom,#aadddd 0%,#77aaaa 100%);
+}
+.but
+{
+    width:30%;
+    height: 12%;
+    margin:0% 0%;
+    display:inline;
+    border-radius:15%;
+    font-size: 20px;
+    background:-webkit-linear-gradient(top,#aaa 0%,#ccccff 100%);
+    
+}
+.but:hover
+{
+    background:-webkit-linear-gradient(bottom,#aaa 0%,#ccf 100%);
+}
+.bute
+{
+    width:60%;
+    height:12%;
+    border-radius:15%;
+    font-size: 20px;
+    background:-webkit-linear-gradient(top,#aaa 0%,#000 90%);
+}
+.bute:hover
+{
+     background:-webkit-linear-gradient(bottom,#aaa 0%,#000 90%);
+}
+#disp
+{
+    height: 7%;
+    width:50%;
+    border-radius:10px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 135%;
+}
